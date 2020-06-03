@@ -36,6 +36,7 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
+
 ##usersテーブル
 
 |Colum|Type|Options|
@@ -46,6 +47,7 @@ Things you may want to cover:
 
 ##Association
 - has_many :groups, through: :messages
+
 
 ##groupsテーブル
 
