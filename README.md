@@ -22,3 +22,16 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+##messagesテーブル
+
+|Colum|Type|Options|
+|-----|----|-------|
+|body|text|null: false|
+|image|string|null: false|
+|group_id|integer|null:false|
+|user_id|integer|null:false|
+
+##Association
+- belongs_to :group
+- belongs_to :user
