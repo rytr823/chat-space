@@ -46,7 +46,7 @@ Things you may want to cover:
 |password|string|null: false|
 
 ###Association
-- has_many :groups, through: :messages
+- has_many :groups, through: :users_groups
 
 
 ##groupsテーブル
@@ -56,7 +56,7 @@ Things you may want to cover:
 |group_name|string|null: false|
 
 ###Association
-- has_many :users, through: :messages
+- has_many :users, through: :users_groups
 
 ##users_groupsテーブル
 
