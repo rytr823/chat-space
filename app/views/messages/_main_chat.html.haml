@@ -1,0 +1,47 @@
+.wrapper__chat-main
+  .wrapper__chat-main__group-info
+    .wrapper__chat-main__group-info__group
+      .wrapper__chat-main__group-info__group__group-name
+        test
+      .wrapper__chat-main__group-info__group__user-name
+        Menber:masa
+    .wrapper__chat-main__group-info__edit
+      = link_to "Edit",'#', class: "edit-btn"
+  .wrapper__chat-main__message-list
+    .wrapper__chat-main__message-list__messages
+      .wrapper__chat-main__message-list__messages__post-info
+        .wrapper__chat-main__message-list__messages__post-info__message-info
+          .wrapper__chat-main__message-list__messagespost-info__message-info__name
+            masa
+          .wrapper__chat-main__message-list__messages__post-info__message-info__date
+            2020/xx/xx(xxx) xx:xx:xx
+        .wrapper__chat-main__message-list__messages__post-info__message
+          おはよう！
+      .wrapper__chat-main__message-list__messages__post-info
+        .wrapper__chat-main__message-list__messages__post-info__message-info
+          .wrapper__chat-main__message-list__messagespost-info__message-info__name
+            masa
+          .wrapper__chat-main__message-list__messages__post-info__message-info__date
+            2020/xx/xx(xxx) xx:xx:xx
+        .wrapper__chat-main__message-list__messages__post-info__message
+          おはよう！
+      .wrapper__chat-main__message-list__messages__post-info
+        .wrapper__chat-main__message-list__messages__post-info__message-info
+          .wrapper__chat-main__message-list__messagespost-info__message-info__name
+            masa
+          .wrapper__chat-main__message-list__messages__post-info__message-info__date
+            2020/xx/xx(xxx) xx:xx:xx
+        .wrapper__chat-main__message-list__messages__post-info__message
+          おはよう！
+  .wrapper__chat-main__message-form
+    .wrapper__chat-main__message-form__post-form
+      .wrapper__chat-main__message-form__post-form__text
+        %input.input-text{type: "text", placeholder: "type a message"}
+      .wrapper__chat-main__message-form__post-form__image
+        
+        %label.input-box__image
+          = icon('fas', 'image')
+          %input.hidden{type: "file"}
+    .wrapper__chat-main__message-form__send
+      %input.submit{type: "submit", value: "Sned"}  
+
