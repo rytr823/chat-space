@@ -4,29 +4,16 @@
       .wrapper__side-bar__user-name__top-items__name
         = current_user.name
       .wrapper__side-bar__user-name__top-items__icons
-        = link_to "#", class: "top-items__btn" do
+        = link_to new_group_path(current_user), class: "top-items__btn" do
           %i.far.fa-edit
         = link_to edit_user_path(current_user), class: "top-items__btn" do
           %i.fas.fa-cog
   .wrapper__side-bar__group-list
-    .wrapper__side-bar__group-list__group-info
-      .wrapper__side-bar__group-list__group-info__group-name
-        techcamp
-      .wrapper__side-bar__group-list__group-info__new-message
-        まだメッセージがありません
-    .wrapper__side-bar__group-list__group-info
-      .wrapper__side-bar__group-list__group-info__group-name
-        techcamp
-      .wrapper__side-bar__group-list__group-info__new-message
-        まだメッセージがありません
-    .wrapper__side-bar__group-list__group-info
-      .wrapper__side-bar__group-list__group-info__group-name
-        techcamp
-      .wrapper__side-bar__group-list__group-info__new-message
-        まだメッセージがありません
-    .wrapper__side-bar__group-list__group-info
-      .wrapper__side-bar__group-list__group-info__group-name
-        techcamp
-      .wrapper__side-bar__group-list__group-info__new-message
-        まだメッセージがありません
-  
+    - current_user.groups.each do |group|
+      .wrapper__side-bar__group-list__group-info
+        = link_to edit_group_path(current_user) do
+          .wrapper__side-bar__group-list__group-info__group-name
+            = group.name
+          .wrapper__side-bar__group-list__group-info__new-message
+            メッセージはまだありません
+    
