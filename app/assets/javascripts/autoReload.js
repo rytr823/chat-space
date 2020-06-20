@@ -5,7 +5,7 @@ $(function () {
         `<div class="wrapper__chat-main__message-list__messages" data-message-id=${message.id}>
           <div class="wrapper__chat-main__message-list__messages__post-info">
             <div class="wrapper__chat-main__message-list__messages__post-info__message-info">
-              <div class="wrapper__chat-main__message-list__messagespost-info__message-info__name">
+              <div class="wrapper__chat-main__message-list__messages__post-info__message-info__name">
                 ${message.user_name}
               </div>
               <div class="wrapper__chat-main__message-list__messages__post-info__message-info__date">
@@ -16,7 +16,7 @@ $(function () {
               <p class="Message__content">
                 ${message.content}
               </p>
-              <img class="Message__image" src="${massage.image}">
+              <img class="Message__image" src="${message.image}">
             </div>
           </div>
         </div>`
@@ -26,7 +26,7 @@ $(function () {
         `<div class="wrapper__chat-main__message-list__messages" data-message-id=${message.id}>
       <div class="wrapper__chat-main__message-list__messages__post-info">
         <div class="wrapper__chat-main__message-list__messages__post-info__message-info">
-          <div class="wrapper__chat-main__message-list__messagespost-info__message-info__name">
+          <div class="wrapper__chat-main__message-list__messages__post-info__message-info__name">
             ${message.user_name}
           </div>
           <div class="wrapper__chat-main__message-list__messages__post-info__message-info__date">
