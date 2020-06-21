@@ -70,6 +70,12 @@
           font-size: 12px;
           color: #999999;
           display: flex;
+          ul {
+            display: flex;
+            li {
+              padding-right: 5PX;
+          }
+          }
         }
       }
       &__edit {
