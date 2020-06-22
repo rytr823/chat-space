@@ -17,6 +17,7 @@
         height: 20px;
         width: 260px;
         display: flex;
+        font-weight: bold;
         justify-content: space-between;
         align-items: center;
         &__name {
@@ -27,7 +28,7 @@
           text-align: right;
           .top-items__btn {
             color: #ffffff;
-            margin-left: 5px;
+            text-decoration: none;
           }
         }
       }
@@ -139,11 +140,13 @@
           .input-text {
             height: 50px;
             width: 100%;
+            padding: 0 45px 0 15px;
           }
         }
         &__image {
           position: absolute;
           right: 10px;
+          font-size: 25px;
           .hidden {
             display: none;
           }
